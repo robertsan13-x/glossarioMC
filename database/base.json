@@ -1,0 +1,77 @@
+[
+    {
+        "id": 1,
+        "titulo": "O que é JavaScript",
+        "descricao": "JavaScript é uma linguagem de programação que permite implementar funcionalidades mais complexas em páginas web. Desde o momento em que a página web é exibida no navegador, JavaScript é usado para tornar a página mais responsiva, interativa e dinâmica."
+    },
+    {
+        "id": 2,
+        "titulo": "Statement 'for'",
+        "descricao": "O statement 'for' cria um loop que consiste em três expressões opcionais, dentro de parênteses e separadas por ponto e vírgula, seguidas por uma declaração ou uma sequência de declarações executadas em sequência."
+    },
+    {
+        "id": 3,
+        "titulo": "Funções em JavaScript",
+        "descricao": "Uma função em JavaScript é um bloco de código projetado para realizar uma tarefa específica. Uma função é executada quando 'algo' a invoca (chama)."
+    },
+    {
+        "id": 4,
+        "titulo": "Objetos em JavaScript",
+        "descricao": "JavaScript é uma linguagem baseada em objetos. Um objeto é uma coleção de propriedades, e uma propriedade é uma associação entre um nome (ou chave) e um valor."
+    },
+    {
+        "id": 5,
+        "titulo": "Arrays em JavaScript",
+        "descricao": "Um array em JavaScript é um objeto global usado na construção de 'arrays', que são tipos de dados de alto nível, semelhantes a listas."
+    },
+    {
+        "id": 6,
+        "titulo": "Métodos em JavaScript",
+        "descricao": "Métodos em JavaScript são funções definidas como propriedades de objetos JavaScript."
+    },
+    {
+        "id": 7,
+        "titulo": "Eventos em JavaScript",
+        "descricao": "Eventos em JavaScript são ações que podem ser detectadas pelo navegador."
+    },
+    {
+        "id": 8,
+        "titulo": "DOM (Document Object Model)",
+        "descricao": "O DOM (Modelo de Objeto de Documento) é uma representação do documento HTML que pode ser manipulada por meio de JavaScript para alterar dinamicamente a estrutura, o estilo e o conteúdo da página."
+    },
+    {
+        "id": 9,
+        "titulo": "AJAX (Asynchronous JavaScript and XML)",
+        "descricao": "AJAX é uma técnica de desenvolvimento web que permite atualizações assíncronas de partes de uma página, sem a necessidade de recarregar a página inteira. Isso é feito usando XMLHttpRequest ou a API Fetch em JavaScript."
+    },
+    {
+        "id": 10,
+        "titulo": "jQuery",
+        "descricao": "jQuery é uma biblioteca JavaScript rápida, pequena e rica em recursos que simplifica a manipulação de documentos HTML, manipulação de eventos, animações e interações AJAX para desenvolvimento web rápido e fácil."
+    },
+    {
+        "id": 11,
+        "titulo": "JSON (JavaScript Object Notation)",
+        "descricao": "JSON é um formato de dados leve e independente de linguagem que é fácil de ler e escrever. É usado principalmente para transmitir dados entre um servidor e um cliente na web, como uma alternativa ao XML."
+    },
+    {
+        "id": 12,
+        "titulo": "Callback",
+        "descricao": "Um callback é uma função passada como argumento para outra função. A função de retorno de chamada é chamada (ou executada) dentro da função externa para completar algum tipo de ação."
+    },
+    {
+        "id": 13,
+        "titulo": "Promise",
+        "descricao": "Uma Promise é um objeto JavaScript que representa a eventual conclusão ou falha de uma operação assíncrona. Promises são usadas para evitar o 'callback hell' e escrever código mais legível para operações assíncronas."
+    },
+    {
+        "id": 14,
+        "titulo": "Arrow Functions",
+        "descricao": "As Arrow Functions, ou funções de seta, são uma forma mais curta de escrever expressões de função em JavaScript. Elas oferecem uma sintaxe mais concisa e semântica 'this' fixa, que simplifica a escrita de funções."
+    },
+    {
+        "id": 15,
+        "titulo": "ES6 (ECMAScript 2015)",
+        "descricao": "ES6 é a sexta versão do padrão ECMAScript, também conhecida como ECMAScript 2015. Introduziu muitos recursos novos na linguagem JavaScript, incluindo classes, módulos, arrow functions, let, const, e muito mais."
+    }
+]

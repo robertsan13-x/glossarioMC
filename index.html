@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rafaela Dias">
+    <meta name="keywords" content="html, css, web, desenvolvimento, front-end">
+    <title>Glossário JavaScript</title>
+    <link rel="stylesheet" href="./style/styles.css">
+</head>
+<body>
+    <article class="bg__textos">
+        <span class="textos__background tb-1"></span>
+        <span class="textos__background tb-2"></span>
+        <span class="textos__background tb-3"></span>
+    </article>
+    <section class="conteudo">
+       
+          <img src="images/jslogo.webp" alt="Logo do site" style="width: 100px; height: auto;" 
+   
+
+        <article class="card">
+            <header class="cabecalho">
+                <h1 class="cabecalho">Bem-vindo ao meu Dicionário Javascript!</h1>
+            </header>
+            <main class="corpo">
+                <p class="cabecalho">Escolha um verbete no combo abaixo:</p>
+                <form class="js-formulario">
+                    <select name="termo" required>
+                        <option value="" selected disabled>Selecione um termo</option>
+                    </select>
+                    <input type="submit" value="Buscar" />
+                </form>
+                <section class="resultado js-resultado display-none">
+                    <div class="carregamento js-carregamento display-none"></div>
+                    <h3 class="resultado__titulo js-resultado__titulo"></h3>
+                    <span class="resultado__descricao js-resultado__descricao"></span>
+                </section>
+            </main>
+        </article>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./script/script.js"></script>
+</body>
+</html>

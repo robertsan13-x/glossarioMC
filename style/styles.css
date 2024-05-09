@@ -1,0 +1,177 @@
+:root {
+  --cor-background: #240385;
+  --cor-background-card: #5b65ea;
+  --cor-texto: #fefefe;
+  --cor-sombra: rgba(0, 0, 0, 0.2);
+  --cor-texto-titulo: #f3f3f3;
+  --cor-texto-descricao: #dcdcdc;
+}
+
+* {
+  font-family: "Verdana", sans-serif;
+  box-sizing: border-box;
+  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+.display-none {
+  display: none;
+}
+
+body {
+  background-color: var(--cor-background);
+  position: relative;
+}
+
+body::after {
+  content: "";
+  background-image: var(--imagem-fundo);
+  background-repeat: repeat;
+  background-size: 70px 50px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.3;
+  pointer-events: none;
+  box-shadow: 0 0 50px var(--cor-background-card);
+}
+
+.cabecalho {
+  text-align: center;
+  padding: 1.5rem 0;
+  color: var(--cor-texto-titulo);
+  margin-bottom: 1rem;
+}
+
+.cabecalho h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cabecalho p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  line-height: 1.5;
+  color: var(--cor-texto-descricao);
+}
+
+.conteudo {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.conteudo .card {
+  background-color: var(--cor-background-card);
+  width: 100%;
+  max-width: 500px;
+  border-radius: 5px;
+  margin: auto;
+  box-shadow: 0 0 10px var(--cor-sombra);
+}
+
+.conteudo .card header.cabecalho {
+  background-color: var(--cor-texto);
+  height: 27px;
+  border-radius: 5px 5px 0 0;
+}
+
+.conteudo .card main.corpo {
+  padding: 3rem 1rem;
+}
+
+.conteudo .card main.corpo form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.conteudo .card main.corpo form select {
+  background-color: var(--cor-background-card);
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--cor-texto);
+  color: var(--cor-texto);
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>');
+  background-position: right 0.5rem top 50%;
+  background-repeat: no-repeat;
+}
+
+.conteudo .card main.corpo form select option {
+  color: var(--cor-texto);
+}
+
+.conteudo .card main.corpo form input[type="submit"] {
+  background-color: var(--cor-texto);
+  color: var(--cor-background-card);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  width: 48%;
+}
+
+.conteudo .card main.corpo form input[type="submit"]:hover {
+  box-shadow: 0 0 5px var(--cor-texto);
+}
+
+.conteudo .card main.corpo .resultado {
+  padding: 3rem 0.5rem 1rem 0.5rem;
+}
+
+.conteudo .card main.corpo .resultado .carregamento {
+  height: 50px;
+  width: 50px;
+  border: 5px solid var(--cor-texto);
+  margin: 0 auto;
+  border-radius: 50%;
+  border-left-color: var(--cor-background-card);
+  border-right-color: var(--cor-background-card);
+  animation: carregamento 1s linear infinite;
+}
+
+@keyframes carregamento {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.conteudo .card main.corpo .resultado h3.resultado__titulo {
+  color: var(--cor-texto);
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.conteudo .card main.corpo .resultado span.resultado__descricao {
+  color: var(--cor-texto);
+}
+
+@media screen and (max-width: 550px) {
+  .conteudo .card main.corpo form input[type="submit"] {
+      width: 100%;
+      margin-top: 10px;
+  }
+}
